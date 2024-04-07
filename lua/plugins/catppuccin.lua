@@ -1,20 +1,13 @@
-return { 
+return {
     "catppuccin/nvim",
-    name = "catppuccin", 
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme "catppuccin"
-      require("catppuccin").setup({
-      integrations = {
-        cmp = true,
-        gitsigns = true,
-        nvimtree = true,
-        treesitter = true,
-        telescope = true
-    }
-
-})
-    end
-
-} 
-    
+        require("catppuccin").setup({
+            background = {
+                light = "latte",
+                dark = "mocha",
+            },
+        })
+        vim.cmd.colorscheme("catppuccin")
+    end,
+}
