@@ -8,6 +8,7 @@ return {
                 dark = "mocha",
             },
         })
+        vim.opt.termguicolors = true
         vim.cmd.colorscheme("catppuccin")
     end,
 }
